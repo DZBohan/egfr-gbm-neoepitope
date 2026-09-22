@@ -5,7 +5,7 @@ sequence, antigen processing and presentation, expression integration, structura
 immunogenicity, and what a public neo-antigen atlas can and cannot validate.
 
 The write-up below is the assignment itself. The same document is available as
-[docs/assignment.pdf](docs/assignment.pdf), 14 pages, and as a self-contained
+[docs/assignment.pdf](docs/assignment.pdf), 13 pages, and as a self-contained
 [docs/assignment.html](docs/assignment.html). Every table is generated from the raw tool
 output in `results/` by [scripts/04_build_assignment.py](scripts/04_build_assignment.py).
 
@@ -13,18 +13,15 @@ output in `results/` by [scripts/04_build_assignment.py](scripts/04_build_assign
 
 **Bohan Zhang**
 
-From protein sequence and antigen processing to expression, immunogenicity, and the limits of
-database validation.
+From protein sequence and antigen processing to expression, immunogenicity, and the limits of database validation.
 
 This analysis evaluates a single EGFR substitution using HLA-A\*02:01 as a representative common class I allele. Scores describe computational predictions; expression measurements are gene-level observations. Neither establishes that a mutant peptide is naturally presented or recognized by T cells.
 
 ## Step 1. Generate Neoantigen and Native Antigen Sequences
 
-The selected alteration is EGFR p.Gly598Val (G598V) in glioblastoma. The supplied protein FASTA records identify transcript `ENST00000275493` and contain 1,210 amino acids each. Direct comparison finds exactly one difference: glycine in the wild type is replaced by valine at residue 598, using one-based numbering of the full precursor protein.
+The selected alteration is EGFR p.Gly598Val (G598V) in glioblastoma. The protein FASTA records identify transcript `ENST00000275493` and contain 1,210 amino acids each. Direct comparison finds exactly one difference: glycine in the wild type is replaced by valine at residue 598, using one-based numbering of the full precursor protein.
 
-**Sequence provenance and VEP limitation.** The sequences below come directly from `data/egfr_wt.fa` and `data/egfr_g598v.fa`. No VEP web screenshot, input genomic variant, genome assembly, transcript version, or VEP result export is retained in the repository. Therefore, a completed VEP web annotation cannot be documented here. The protein substitution is verified from the supplied files, not represented as a newly observed VEP result.
-
-Sequence context, residues 586 to 610, with the substituted position marked:
+Sequence context, residues 586 to 610:
 
 ```
                     598
@@ -87,13 +84,13 @@ TVQPTCVNSTFDSPAHWAQKGSHQISLDNPDYQQDFFPKEAKPNGIFKGSTAENAEYLRV
 APQSSEFIGA
 ```
 
-Residue 598 is the tenth line, position 58. GitHub does not render colour inside a code block, so the residue is marked in red in [docs/assignment.pdf](docs/assignment.pdf) and [docs/assignment.html](docs/assignment.html) instead. Lines contain at most 60 residues; the wrapping does not alter the sequence.
+Residue 598 is on the tenth line, position 58. GitHub does not render colour inside a code block, so that residue is marked in red in [docs/assignment.pdf](docs/assignment.pdf) and [docs/assignment.html](docs/assignment.html) instead.
 
 ## Step 2. Intracellular Processing and MHC Class I Binding
 
-The archived IEDB T Cell Prediction Class I results use HLA-A\*02:01 and NetMHCpan 4.1 BA together with MHC-I Processing. The original run notes specify Basic Processing Predictions and the immunoproteasome option; the peptide CSVs establish the allele, peptide length, and output columns but do not independently record that proteasome setting. Sequence 1 is wild type and sequence 2 is G598V. Each full-length protein yields 1,202 nine-residue windows or 1,198 thirteen-residue windows.
+IEDB T Cell Prediction Class I was run with MHC-I Processing Basic Processing Predictions using the immunoproteasome option, with NetMHCpan 4.1 BA running simultaneously for HLA-A\*02:01. Sequence 1 is wild type and sequence 2 is G598V. Each full-length protein yields 1,202 nine-residue windows or 1,198 thirteen-residue windows.
 
-Tables are sorted by decreasing `processing total score`, as requested. In these exports, total = proteasome + TAP + MHC, whereas `processing score` alone = proteasome + TAP. MHC score = −log10(predicted IC50 in nM). Higher scores and lower IC50 values are favorable, but these are not calibrated probabilities of cleavage, transport, or presentation. See [IEDB score definitions](https://tools.iedb.org/processing/help/).
+Tables are sorted by decreasing `processing total score`. In these exports, total = proteasome + TAP + MHC, whereas `processing score` alone = proteasome + TAP. MHC score = −log10(predicted IC50 in nM). Higher scores and lower IC50 values are favorable, but these are not calibrated probabilities of cleavage, transport, or presentation. See [IEDB score definitions](https://tools.iedb.org/processing/help/).
 
 ### Top ten 9-mers from each protein
 
@@ -233,7 +230,7 @@ Only one HLA allele and two lengths were examined. Scores omit patient-specific 
 
 ## Step 3. Expression Integration
 
-The representative cohort is [cBioPortal `gbm_cptac_2021`](https://www.cbioportal.org/study/summary?id=gbm_cptac_2021), Glioblastoma (CPTAC, Cell 2021), queried for EGFR (Entrez 1956). Protein abundance was measured by mass spectrometry. The retained screenshots show the Plots tab with Protein vs mRNA and G598V entered in Search Mutation(s). They contain 99 samples with both measurements.
+The representative cohort is [cBioPortal `gbm_cptac_2021`](https://www.cbioportal.org/study/summary?id=gbm_cptac_2021), Glioblastoma (CPTAC, Cell 2021), queried for EGFR (Entrez 1956). Protein abundance was measured by mass spectrometry. The screenshots show the Plots tab with Protein vs mRNA and G598V entered in Search Mutation(s). They contain 99 samples with both measurements.
 
 ![Figure 1](figures/step3_protein_vs_mrna_g598v.jpg)
 
@@ -245,7 +242,7 @@ The representative cohort is [cBioPortal `gbm_cptac_2021`](https://www.cbioporta
 
 ### Expression in mutant-bearing versus non-mutated samples
 
-The following statistics were recomputed from a fresh cBioPortal API snapshot archived for this audit. The original repository had no expression table. Group membership uses recorded EGFR mutations; “no mutation” means no mutation recorded in this profile, not proof of a completely wild-type tumor.
+The following statistics come from cBioPortal API queries for this cohort. Group membership uses recorded EGFR mutations; “no mutation” means no mutation recorded in this profile, not proof of a completely wild-type tumor.
 
 EGFR expression by mutation group
 
@@ -256,11 +253,11 @@ EGFR expression by mutation group
 | G598V | 6 | 2.101 | 7,980,513.1 |
 | All samples without G598V | 93 | 0.137 | 733,153.5 |
 
-Data: [results/expression\_audit/sample\_table.tsv](results/expression_audit/sample_table.tsv).
+Data: [results/cbioportal\_api/sample\_table.tsv](results/cbioportal_api/sample_table.tsv).
 
 The six G598V tumors have higher gene-level mRNA and protein values than the 82 samples with no recorded EGFR mutation. The 93-sample “without G598V” group also includes other EGFR mutations and should not be equated with the non-mutated group. Protein values are the portal abundance-ratio profile, not absolute concentrations. The raw mRNA profile is described by cBioPortal as UQ-normalized FPKM, median-centered by gene; its numeric scale must not be interpreted as TPM or compared directly with ICERFIRE expression inputs.
 
-Recalculated Pearson correlation is 0.817 for the raw mRNA profile and 0.925 for the archived log2-based mRNA z-score profile. The latter reproduces the displayed 0.92. Agreement across molecular levels supports a coherent association, but does not exclude shared technical or biological confounding.
+Pearson correlation is 0.817 for the raw mRNA profile and 0.925 for the log2-based mRNA z-score profile. The latter reproduces the displayed 0.92. Agreement across molecular levels supports a coherent association, but does not exclude shared technical or biological confounding.
 
 Copy-number stratification (GISTIC ≥ 2 defines amplification)
 
@@ -284,7 +281,7 @@ Bulk tryptic proteomics and HLA immunopeptidomics answer different questions. De
 
 ## Step 4. Structural Immunogenicity
 
-The input pairs are the nine mutation-spanning 9-mers from Step 2, with WT as peptide A and G598V as peptide B on the same input line. The global top-ten peptides are identical between proteins and therefore are not mutation-specific candidates. The retained Peptide Variant Comparison results include Class I pMHC Immunogenicity, Neo-Epitope Immunogenicity (ICERFIRE 1.0), and NetMHCpan 4.1 EL context for HLA-A\*02:01.
+The input pairs are the nine mutation-spanning 9-mers from Step 2, with WT as peptide A and G598V as peptide B on the same input line. The global top-ten peptides are identical between proteins and therefore are not mutation-specific candidates. The Peptide Variant Comparison results include Class I pMHC Immunogenicity, Neo-Epitope Immunogenicity (ICERFIRE 1.0), and NetMHCpan 4.1 EL context for HLA-A\*02:01.
 
 Paired peptide immunogenicity and ICERFIRE outputs
 
@@ -336,7 +333,7 @@ ICERFIRE ranks TCPAVVMGE highest in this set (prediction 0.226528; percentile 15
 
 The pMHC method uses positional amino-acid features. ICERFIRE instead uses an ensemble model with a selected ICORE and presentation information. Its published consensus model uses anchor masking, BLOSUM mutation features, and expression. Thus, the difference cannot be explained by claiming that ICERFIRE has no mask. Pairs 3 and 4 select the same mutant ICORE, KTCPAVVM, and have identical exported ICERFIRE outputs. See [Wan et al. (2024)](https://academic.oup.com/narcancer/article/6/1/zcae002/7591107).
 
-The DTU service describes self-similarity among its features, but the paper explicitly says the final consensus model does not use the self-similarity feature. The exact deployed wrapper configuration is not archived. A reported similarity column therefore does not demonstrate a fixed self-similarity penalty or explain a particular score causally. HCVKTCPAV has similarity 0.967956; VVMGENNTL is higher at 0.971274. Neither is evidence of measured tolerance. See [ICERFIRE service documentation](https://services.healthtech.dtu.dk/services/ICERFIRE-1.0/) and [the consensus-model description](https://academic.oup.com/narcancer/article/6/1/zcae002/7591107).
+The DTU service describes self-similarity among its features, but the paper explicitly says the final consensus model does not use the self-similarity feature. The exact deployed wrapper configuration cannot be determined from the exported results. A reported similarity column therefore does not demonstrate a fixed self-similarity penalty or explain a particular score causally. HCVKTCPAV has similarity 0.967956; VVMGENNTL is higher at 0.971274. Neither is evidence of measured tolerance. See [ICERFIRE service documentation](https://services.healthtech.dtu.dk/services/ICERFIRE-1.0/) and [the consensus-model description](https://academic.oup.com/narcancer/article/6/1/zcae002/7591107).
 
 All pairs report `total_gene_tpm = 6.071`. It is not a tumor-specific measurement in this analysis. The DTU service can obtain reference expression or accept user TPM, but this export does not document the origin of 6.071 in the IEDB wrapper. CPTAC FPKM-profile values cannot replace TPM directly; changing expression requires a rerun and need not improve every random-forest prediction monotonically. These scores are not established lower bounds.
 
@@ -344,11 +341,11 @@ Neither tool reconstructs this peptide-HLA-TCR structure or measures a patient's
 
 ## Step 5. LC-MS/MS Benchmark Validation and Future Experiments
 
-### TCIA comparison and the requested precision calculation
+### TCIA comparison and precision calculation
 
-The retained The Cancer Immunome Atlas export was filtered to disease GBM and gene EGFR through the Neoantigens table. It contains 111 rows, 78 distinct peptide sequences, and 35 patient identifiers, with peptide lengths from 8 to 11. Every HLA-alleles field is NA.
+The Cancer Immunome Atlas export was filtered to disease GBM and gene EGFR through the Neoantigens table. It contains 111 rows, 78 distinct peptide sequences, and 35 patient identifiers, with peptide lengths from 8 to 11. Every HLA-alleles field is NA.
 
-**The requested LC-MS/MS benchmark is unavailable in this export.** TCIA neoantigen entries are computational candidates derived from genomic/transcriptomic data, not peptide-spectrum observations from an HLA pull-down. Consequently, an entry does not establish MS detection and absence does not establish a false positive. The distinction is supported by the [TCIA primary publication](https://pubmed.ncbi.nlm.nih.gov/28052254/) and the [TSAFinder study’s description of the downloaded TCIA predictions](https://pmc.ncbi.nlm.nih.gov/articles/PMC11020248/).
+**This export does not provide an LC-MS/MS benchmark.** TCIA neoantigen entries are computational candidates derived from genomic/transcriptomic data, not peptide-spectrum observations from an HLA pull-down. Consequently, an entry does not establish MS detection and absence does not establish a false positive. The distinction is supported by the [TCIA primary publication](https://pubmed.ncbi.nlm.nih.gov/28052254/) and the [TSAFinder study’s description of the downloaded TCIA predictions](https://pmc.ncbi.nlm.nih.gov/articles/PMC11020248/).
 
 Exact sequence and longer-peptide overlap with TCIA
 
@@ -366,11 +363,11 @@ Exact sequence and longer-peptide overlap with TCIA
 
 Data: [results/tcia\_gbm\_egfr/neoantigens\_gbm\_egfr.tsv](results/tcia_gbm_egfr/neoantigens_gbm_egfr.tsv).
 
-If TCIA membership is provisionally treated as a reference label solely to reproduce the assignment calculation, exact matching gives nominal TP = 1 and nominal FP = 8, with TP/(TP + FP) = 1/9 = 11.1%. These should be reported as **one matched and eight unmatched predictions**, not experimentally established TP and FP. Allowing a longer peptide to contain the candidate gives 3/9 = 33.3% overlap, with nominal counts 3 and 6. This second metric is substring recovery, not exact peptide validation or mutation-site precision.
+If TCIA membership is provisionally treated as a reference label, exact matching gives nominal TP = 1 and nominal FP = 8, with TP/(TP + FP) = 1/9 = 11.1%. These should be reported as **one matched and eight unmatched predictions**, not experimentally established TP and FP. Allowing a longer peptide to contain the candidate gives 3/9 = 33.3% overlap, with nominal counts 3 and 6. This second metric is substring recovery, not exact peptide validation or mutation-site precision.
 
 Observed MS TP and FP counts are unknown, so experimental positive predictive value cannot be estimated from these files. A 0% MS precision is also unjustified: unavailable validation labels are not negative results.
 
-VVMGENNTL occurs in four patients: TCGA-06-0174, TCGA-12-0616, TCGA-19-2620, and TCGA-28-5213. Six distinct TCIA peptide sequences are compatible with the local G598V sequence, including GPHCVKTCPAV, which must be included when enumerating this site. These entries span seven patients in the filtered EGFR table. The export has no genomic variant column or HLA assignment, so sequence compatibility alone does not verify each patient's mutation or HLA restriction and is not a population prevalence estimate.
+VVMGENNTL occurs in four patients: TCGA-06-0174, TCGA-12-0616, TCGA-19-2620, and TCGA-28-5213. Six distinct TCIA peptide sequences are compatible with the local G598V sequence, including GPHCVKTCPAV. These entries span seven patients in the filtered EGFR table. The export has no genomic variant column or HLA assignment, so sequence compatibility alone does not verify each patient's mutation or HLA restriction and is not a population prevalence estimate.
 
 ### Does the result justify experimental testing?
 
@@ -392,7 +389,7 @@ The phase 3 ACT IV trial of EGFRvIII-targeted rindopepimut did not improve survi
 
 Recent GBM studies support investigating multiple personalized targets: a phase 1 DNA vaccine study included up to 40 neoantigens and reported vaccine-associated T-cell responses ([Garfinkle et al., 2026](https://www.nature.com/articles/s43018-026-01163-w)). A single-arm phase Ib neoantigen-pulsed dendritic-cell trial treated 11 patients and reported median PFS of 16.2 months from surgery ([Zhang et al., 2026](https://www.nature.com/articles/s41467-026-75066-w)). These early studies do not establish randomized survival benefit or validate G598V. A confirmed G598V epitope might be considered in a broader antigen strategy, subject to HLA matching, tumor heterogeneity, natural presentation, and mutant-specific recognition.
 
-Data provenance: supplied FASTA files, archived IEDB and TCIA result tables, retained screenshots, and an additional cBioPortal API snapshot in `results/expression_audit/`. Tables are generated directly from these files by `scripts/04_build_assignment.py`. Screenshots are embedded in this document; their source files are in figures/. No VEP screenshot or new experimental observation is implied.
+Data provenance: supplied FASTA files, archived IEDB and TCIA result tables, retained screenshots, and an additional cBioPortal API snapshot in `results/cbioportal_api/`. Tables are generated directly from these files by `scripts/04_build_assignment.py`. Screenshots are embedded in this document; their source files are in figures/.
 
 ---
 

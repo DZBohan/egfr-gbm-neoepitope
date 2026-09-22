@@ -71,7 +71,7 @@ Note on the tryptic-peptide row above: the sequence and coordinates pass; there 
 - `docs/assignment.html`: English assignment with inline CSS, no JavaScript, all four existing figures linked as `../figures/*.jpg`, five numbered sections, table captions, figure captions, and inline source links. No em dash.
 - `docs/audit-report.md`: this line-specific audit.
 - `scripts/04_build_assignment.py`: standard-library-only generator. Tables and FASTA are read from data/result files, not Markdown. Run from any directory with `python3 /path/to/scripts/04_build_assignment.py`.
-- `results/expression_audit/`: raw API responses for protein, mRNA, CNA, mutations, and mRNA z-scores; profile metadata; request/retrieval provenance; and the derived `sample_table.tsv`. These are new audit-time data, not falsely labeled as original archived results.
+- `results/cbioportal_api/`: raw API responses for protein, mRNA, CNA, mutations, and mRNA z-scores; profile metadata; request/retrieval provenance; and the derived `sample_table.tsv`. These are new audit-time data, not falsely labeled as original archived results.
 
 The existing Markdown, README, FASTA, figures, and original IEDB/TCIA results were not altered. The output package preserves `docs/`, `figures/`, `data/`, `results/`, and the generator path so relative links work after extraction.
 
