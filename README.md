@@ -397,6 +397,7 @@ Data provenance: supplied FASTA files, archived IEDB and TCIA result tables, ret
 
 ```
 data/        wild-type and G598V protein FASTA, ENST00000275493
+references/  the papers cited in Step 5, with what each one was checked for
 scripts/     01 expression, 02 peptide pairs, 03 processing summary, 04 document generator
 results/     raw tool output: IEDB 9-mer and 13-mer, variant comparison, TCIA export,
              cBioPortal API snapshot
