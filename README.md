@@ -18,14 +18,15 @@ peptide lengths the ten best-presented peptides are identical between wild type 
 because none of them comes near residue 598. Of the windows that do span it, one moves
 sharply at each length, and it is the one that places the substitution on the C terminus:
 glycine gives the F pocket of HLA-A\*02:01 no anchor, valine does. The two runs also differ
-from each other in a way the score columns explain: proteasome and TAP scores do not depend
-on peptide length, while MHC binding does, because the groove holds nine to ten residues and
-a 13-mer must bulge.
+from each other in a way the score columns explain: the proteasome and TAP terms are almost
+unchanged between the two lengths, while the MHC term accounts for nearly all of the
+difference, which fits a groove that holds nine to ten residues without bulging.
 
 `docs/step3-expression.md`, expression integration. EGFR mRNA and protein are far higher in
 mutated samples, and that contrast is confounded: every mutated sample with copy-number data
 is also amplified, and amplified samples without a mutation sit at the same protein level.
-The difference tracks copy number, not mutation status. The same file sets out why an
+The difference tracks copy number rather than mutation status, and with every mutated
+sample amplified the two cannot be separated in this cohort. The same file sets out why an
 abundant mutant protein is still hard to confirm by mass spectrometry.
 
 `docs/step4-immunogenicity.md`, structural immunogenicity. The pMHC immunogenicity model
@@ -54,7 +55,7 @@ Peptide Variant Comparison server takes.
 
 ```bash
 ./scripts/01_expression.py --gene EGFR --entrez 1956 --study gbm_cptac_2021 --change G598V
-./scripts/02_peptides.py --wt data/egfr_wt.fa --mut data/egfr_mut.fa --pairs results/pairs.tsv
+./scripts/02_peptides.py --wt data/egfr_wt.fa --mut data/egfr_g598v.fa --pairs results/pairs.tsv
 ```
 
 ## Why these scripts check what they check

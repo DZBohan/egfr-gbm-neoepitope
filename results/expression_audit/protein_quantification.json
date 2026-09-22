@@ -1,0 +1,992 @@
+[
+  {
+    "uniqueSampleKey": "QzNMLTAwMTA0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAwMTA0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-00104",
+    "patientId": "C3L-00104",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.055
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAwMzY1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAwMzY1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-00365",
+    "patientId": "C3L-00365",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.22
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAwNjc0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAwNjc0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-00674",
+    "patientId": "C3L-00674",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.137
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAwNjc3OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAwNjc3OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-00677",
+    "patientId": "C3L-00677",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.768
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMDQwOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMDQwOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01040",
+    "patientId": "C3L-01040",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.249
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMDQzOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMDQzOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01043",
+    "patientId": "C3L-01043",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.721
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMDQ1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMDQ1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01045",
+    "patientId": "C3L-01045",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.423
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMDQ2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMDQ2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01046",
+    "patientId": "C3L-01046",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.968
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMDQ4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMDQ4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01048",
+    "patientId": "C3L-01048",
+    "studyId": "gbm_cptac_2021",
+    "value": 3.497
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMDQ5OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMDQ5OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01049",
+    "patientId": "C3L-01049",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.734
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMDYxOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMDYxOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01061",
+    "patientId": "C3L-01061",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.656
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMTQyOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMTQyOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01142",
+    "patientId": "C3L-01142",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.16
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMTQ2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMTQ2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01146",
+    "patientId": "C3L-01146",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.983
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMTQ5OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMTQ5OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01149",
+    "patientId": "C3L-01149",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.539
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMTU0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMTU0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01154",
+    "patientId": "C3L-01154",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.071
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMTU1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMTU1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01155",
+    "patientId": "C3L-01155",
+    "studyId": "gbm_cptac_2021",
+    "value": 3.851
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMTU2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMTU2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01156",
+    "patientId": "C3L-01156",
+    "studyId": "gbm_cptac_2021",
+    "value": 3.067
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMTU3OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMTU3OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01157",
+    "patientId": "C3L-01157",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.967
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxMzI3OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxMzI3OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01327",
+    "patientId": "C3L-01327",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.812
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxODM0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxODM0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01834",
+    "patientId": "C3L-01834",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.896
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAxODg3OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAxODg3OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-01887",
+    "patientId": "C3L-01887",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.621
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyMDQxOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyMDQxOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02041",
+    "patientId": "C3L-02041",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.221
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyNDY1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyNDY1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02465",
+    "patientId": "C3L-02465",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.131
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyNTA0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyNTA0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02504",
+    "patientId": "C3L-02504",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.201
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyNTQyOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyNTQyOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02542",
+    "patientId": "C3L-02542",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.557
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyNjQyOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyNjQyOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02642",
+    "patientId": "C3L-02642",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.185
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyNzA0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyNzA0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02704",
+    "patientId": "C3L-02704",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.994
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyNzA1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyNzA1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02705",
+    "patientId": "C3L-02705",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.239
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyNzA3OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyNzA3OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02707",
+    "patientId": "C3L-02707",
+    "studyId": "gbm_cptac_2021",
+    "value": 3.256
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyNzA4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyNzA4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02708",
+    "patientId": "C3L-02708",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.174
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyOTAwOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyOTAwOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02900",
+    "patientId": "C3L-02900",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.307
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyOTU1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyOTU1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02955",
+    "patientId": "C3L-02955",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.113
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyOTcwOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyOTcwOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02970",
+    "patientId": "C3L-02970",
+    "studyId": "gbm_cptac_2021",
+    "value": 4.288
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAyOTg0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAyOTg0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-02984",
+    "patientId": "C3L-02984",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.54
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzMjYwOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzMjYwOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03260",
+    "patientId": "C3L-03260",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.122
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzMjY2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzMjY2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03266",
+    "patientId": "C3L-03266",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.051
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzMzg3OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzMzg3OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03387",
+    "patientId": "C3L-03387",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.913
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzMzkwOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzMzkwOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03390",
+    "patientId": "C3L-03390",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.683
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzMzkyOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzMzkyOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03392",
+    "patientId": "C3L-03392",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.992
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzNDAwOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzNDAwOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03400",
+    "patientId": "C3L-03400",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.768
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzNDA1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzNDA1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03405",
+    "patientId": "C3L-03405",
+    "studyId": "gbm_cptac_2021",
+    "value": 4.113
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzNDA3OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzNDA3OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03407",
+    "patientId": "C3L-03407",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.893
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzNjgxOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzNjgxOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03681",
+    "patientId": "C3L-03681",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.274
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzNzI3OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzNzI3OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03727",
+    "patientId": "C3L-03727",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.02
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzNzI4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzNzI4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03728",
+    "patientId": "C3L-03728",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.013
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzNzQ0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzNzQ0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03744",
+    "patientId": "C3L-03744",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.137
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzNzQ4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzNzQ4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03748",
+    "patientId": "C3L-03748",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.07
+  },
+  {
+    "uniqueSampleKey": "QzNMLTAzOTY4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTAzOTY4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-03968",
+    "patientId": "C3L-03968",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.527
+  },
+  {
+    "uniqueSampleKey": "QzNMLTA0MDg0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNMLTA0MDg0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3L-04084",
+    "patientId": "C3L-04084",
+    "studyId": "gbm_cptac_2021",
+    "value": 3.312
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAwNjYxOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAwNjYxOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-00661",
+    "patientId": "C3N-00661",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.265
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAwNjYyOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAwNjYyOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-00662",
+    "patientId": "C3N-00662",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.915
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAwNjYzOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAwNjYzOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-00663",
+    "patientId": "C3N-00663",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.01
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAwNjY1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAwNjY1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-00665",
+    "patientId": "C3N-00665",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.505
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxMTkyOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxMTkyOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01192",
+    "patientId": "C3N-01192",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.348
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxMTk2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxMTk2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01196",
+    "patientId": "C3N-01196",
+    "studyId": "gbm_cptac_2021",
+    "value": 3.433
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxMzM0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxMzM0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01334",
+    "patientId": "C3N-01334",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.146
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxMzY0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxMzY0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01364",
+    "patientId": "C3N-01364",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.137
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxMzY2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxMzY2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01366",
+    "patientId": "C3N-01366",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.606
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxMzY3OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxMzY3OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01367",
+    "patientId": "C3N-01367",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.481
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxMzY4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxMzY4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01368",
+    "patientId": "C3N-01368",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.072
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxMzY5OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxMzY5OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01369",
+    "patientId": "C3N-01369",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.536
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxNTA1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxNTA1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01505",
+    "patientId": "C3N-01505",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.088
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxNTE1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxNTE1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01515",
+    "patientId": "C3N-01515",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.331
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxNTE3OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxNTE3OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01517",
+    "patientId": "C3N-01517",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.653
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxNTE4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxNTE4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01518",
+    "patientId": "C3N-01518",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.348
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxNzk4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxNzk4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01798",
+    "patientId": "C3N-01798",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.055
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxODE0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxODE0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01814",
+    "patientId": "C3N-01814",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.075
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxODE1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxODE1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01815",
+    "patientId": "C3N-01815",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.564
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxODE2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxODE2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01816",
+    "patientId": "C3N-01816",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.692
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxODE4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxODE4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01818",
+    "patientId": "C3N-01818",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.208
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxODUxOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxODUxOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01851",
+    "patientId": "C3N-01851",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.743
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxODUyOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxODUyOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01852",
+    "patientId": "C3N-01852",
+    "studyId": "gbm_cptac_2021",
+    "value": 3.817
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxODU2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxODU2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01856",
+    "patientId": "C3N-01856",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.047
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAxODU3OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAxODU3OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-01857",
+    "patientId": "C3N-01857",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.573
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyMTgxOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyMTgxOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02181",
+    "patientId": "C3N-02181",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.235
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyMTgzOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyMTgzOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02183",
+    "patientId": "C3N-02183",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.648
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyMTg1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyMTg1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02185",
+    "patientId": "C3N-02185",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.511
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyMTg2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyMTg2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02186",
+    "patientId": "C3N-02186",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.454
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyMTg4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyMTg4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02188",
+    "patientId": "C3N-02188",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.884
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyMTkwOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyMTkwOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02190",
+    "patientId": "C3N-02190",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.444
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyMjU1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyMjU1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02255",
+    "patientId": "C3N-02255",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.355
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyMjU2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyMjU2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02256",
+    "patientId": "C3N-02256",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.159
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyNzY5OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyNzY5OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02769",
+    "patientId": "C3N-02769",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.041
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyNzcwOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyNzcwOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02770",
+    "patientId": "C3N-02770",
+    "studyId": "gbm_cptac_2021",
+    "value": 2.301
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyNzgyOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyNzgyOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02782",
+    "patientId": "C3N-02782",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.817
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyNzgzOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyNzgzOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02783",
+    "patientId": "C3N-02783",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.471
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyNzg0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyNzg0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02784",
+    "patientId": "C3N-02784",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.871
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyNzg1OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyNzg1OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02785",
+    "patientId": "C3N-02785",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.687
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyNzg2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyNzg2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02786",
+    "patientId": "C3N-02786",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.548
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAyNzg4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAyNzg4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-02788",
+    "patientId": "C3N-02788",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.083
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAzMDcwOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAzMDcwOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-03070",
+    "patientId": "C3N-03070",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.879
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAzMDg4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAzMDg4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-03088",
+    "patientId": "C3N-03088",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.188
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAzMTgwOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAzMTgwOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-03180",
+    "patientId": "C3N-03180",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.162
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAzMTgyOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAzMTgyOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-03182",
+    "patientId": "C3N-03182",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.798
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAzMTgzOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAzMTgzOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-03183",
+    "patientId": "C3N-03183",
+    "studyId": "gbm_cptac_2021",
+    "value": 0.357
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAzMTg0OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAzMTg0OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-03184",
+    "patientId": "C3N-03184",
+    "studyId": "gbm_cptac_2021",
+    "value": 1.623
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAzMTg2OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAzMTg2OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-03186",
+    "patientId": "C3N-03186",
+    "studyId": "gbm_cptac_2021",
+    "value": -0.381
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAzMTg4OmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAzMTg4OmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-03188",
+    "patientId": "C3N-03188",
+    "studyId": "gbm_cptac_2021",
+    "value": 3.868
+  },
+  {
+    "uniqueSampleKey": "QzNOLTAzNDczOmdibV9jcHRhY18yMDIx",
+    "uniquePatientKey": "QzNOLTAzNDczOmdibV9jcHRhY18yMDIx",
+    "entrezGeneId": 1956,
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "sampleId": "C3N-03473",
+    "patientId": "C3N-03473",
+    "studyId": "gbm_cptac_2021",
+    "value": -1.603
+  }
+]

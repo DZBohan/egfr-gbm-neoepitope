@@ -1,0 +1,55 @@
+{
+  "retrieved_at": "2026-09-21T21:12:08.119029-07:00",
+  "requests": [
+    {
+      "url": "https://www.cbioportal.org/api/molecular-profiles/gbm_cptac_2021_protein_quantification/molecular-data/fetch",
+      "payload": {
+        "entrezGeneIds": [
+          1956
+        ],
+        "sampleListId": "gbm_cptac_2021_all"
+      },
+      "rows": 99
+    },
+    {
+      "url": "https://www.cbioportal.org/api/molecular-profiles/gbm_cptac_2021_mrna/molecular-data/fetch",
+      "payload": {
+        "entrezGeneIds": [
+          1956
+        ],
+        "sampleListId": "gbm_cptac_2021_all"
+      },
+      "rows": 99
+    },
+    {
+      "url": "https://www.cbioportal.org/api/molecular-profiles/gbm_cptac_2021_gistic/molecular-data/fetch",
+      "payload": {
+        "entrezGeneIds": [
+          1956
+        ],
+        "sampleListId": "gbm_cptac_2021_all"
+      },
+      "rows": 96
+    },
+    {
+      "url": "https://www.cbioportal.org/api/molecular-profiles/gbm_cptac_2021_mutations/mutations/fetch",
+      "payload": {
+        "entrezGeneIds": [
+          1956
+        ],
+        "sampleListId": "gbm_cptac_2021_all"
+      },
+      "rows": 21
+    },
+    {
+      "url": "https://www.cbioportal.org/api/molecular-profiles/gbm_cptac_2021_mrna_seq_fpkm_Zscores/molecular-data/fetch",
+      "payload": {
+        "entrezGeneIds": [
+          1956
+        ],
+        "sampleListId": "gbm_cptac_2021_all"
+      },
+      "rows": 99
+    }
+  ]
+}

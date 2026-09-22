@@ -27,9 +27,10 @@ nine windows below are the only peptides where a pair can differ at all.
 | 9 | GVMGENNTL | VVMGENNTL | 0.08573 | 0.08573 | 0.00000 | 0.78 | 0.93 | 0.1737 | 42.28 |
 
 Scatter plots, peptide B against peptide A, are `figures/step4_immunogenicity_score_scatter.jpg`
-and `figures/step4_icerfire_el_rank_scatter.jpg`. In the first, every point lies on the
-diagonal. In the second the points fall below it, that is, the mutant is better ranked, with
-one pair moving from 80 to 10.1.
+and `figures/step4_icerfire_el_rank_scatter.jpg`. In the first, the points sit on or beside
+the diagonal. In the second, six pairs fall below it, meaning the mutant is better ranked,
+two sit above it and one ties, with the largest move going from 80 to 10.1. That second plot
+is ICERFIRE's internal EL rank, not its final percentile.
 
 ## Are the mutant peptides predicted to be more immunogenic?
 
@@ -41,14 +42,17 @@ immunogenicity.
 The three exact zeros are the informative part, and they are predictable from position
 alone. `HCVKTCPAG` to `HCVKTCPAV` puts the substitution on the C terminus, `AGVMGENNT` to
 `AVVMGENNT` puts it at P2, and `GVMGENNTL` to `VVMGENNTL` puts it at P1. Those are the three
-masked positions. The model masks them because they anchor into the groove and are not
-contacted by the TCR, so a substitution there cannot change the score. The model is not
-failing, it is reporting that this substitution is invisible to a T cell receptor in those
-three registers.
+masked positions. The model masks them on the assumption that they anchor into the groove
+and are not contacted by the TCR, so a substitution there cannot change its score. The zeros
+therefore follow from the mask, and they are a statement about the model rather than a
+measurement of what a receptor can reach: P1 in particular can be solvent exposed in real
+HLA-A2 complexes.
 
 ICERFIRE does give the mutants scores, and they are modest. The best is `TCPAVVMGE` at the
 15.9th percentile, then `AVVMGENNT` at 26.1 and `CPAVVMGEN` at 29.1. The rest sit between
-40 and 56. Nothing reaches the range usually treated as a promising neo-epitope.
+40 and 56. ICERFIRE publishes no validated cut-off for a promising neo-epitope, so these
+are useful for ranking the nine against each other and not for declaring any of them
+positive.
 
 The two models also disagree about which peptide is the candidate. Step 2 singled out
 `HCVKTCPAV`, whose EL percentile improves from 73 to 7.6, the largest presentation gain in
@@ -58,19 +62,24 @@ the set. ICERFIRE puts it at 55.97, near the bottom of these nine.
 
 **They see different positions.** The pMHC model masks P1, P2 and the C terminus and scores
 only the outward-facing residues. ICERFIRE takes the wild-type and mutant peptide as a pair
-and has no such mask, so it still registers the three substitutions the first model cannot
-see. This alone explains the three zero rows.
+and reports a difference for the three substitutions the first model cannot see. Its
+published consensus model applies masking of its own, so the contrast is in what each model
+masks and what else it uses, not in one having no mask at all. Either way, this is what
+produces the three zero rows in one model and not the other.
 
 **ICERFIRE includes presentation, the pMHC model does not.** The pMHC model scores the
 peptide surface presented to the TCR and says nothing about whether the peptide is presented
 at all. ICERFIRE combines a binding term with its other features, which is why a pair whose
 EL rank moves from 80 to 10.1 is treated differently by the two.
 
-**ICERFIRE penalises similarity to self.** `HCVKTCPAV` has the highest icore similarity
-score in the set, 0.968. Its presentation improves sharply, yet its ICERFIRE percentile stays
-at 56, because a neo-epitope that closely resembles its own wild type is expected to meet a
-T cell repertoire already tolerised against it. A binding-only view cannot express that, and
-it is the reason the two models rank this peptide so differently.
+**ICERFIRE reports similarity to self, and it tracks the disagreement here.** `HCVKTCPAV`
+has an icore similarity score of 0.968, among the highest in the set, though not the maximum:
+`VVMGENNTL` is higher at 0.971. Its presentation improves sharply while its ICERFIRE
+percentile stays at 56. A neo-epitope closely resembling its own wild type is expected to
+meet a repertoire already tolerised against it, which a binding-only view cannot express.
+The similarity column is an output of the wrapper rather than a demonstrated term in the
+published consensus model, so this is a consistent reading of the numbers, not a verified
+mechanism.
 
 **ICERFIRE scores the icore, not the submitted 9-mer.** Rows 3 and 4 return identical
 ICERFIRE values because both collapse to the same icore, `KTCPAVVM`. Two different 9-mer

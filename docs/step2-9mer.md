@@ -20,8 +20,9 @@ sequence.
 | 9 | YVLIALNTV | 88 | 1.064 | 0.182 | -1.516 | -0.271 |
 | 10 | ALLAALCPA | 13 | 0.739 | -0.131 | -0.926 | -0.318 |
 
-Every one of these sits at residue 10, 13, 53, 88, 649, 654, 791, 811, 813 or 1125. None
-comes within eighty residues of position 598, so the substitution cannot alter them. On
+Every one of these sits at residue 10, 13, 53, 88, 649, 654, 791, 811, 813 or 1125. The
+closest, at 649, is 51 residues past position 598, so none of them contains the substitution
+and none can be altered by it. On
 this allele the mutation does not change which peptides are best presented.
 
 ## The peptides that do span residue 598
@@ -42,8 +43,14 @@ Ranks are out of 1,202.
 
 `HCVKTCPAG` to `HCVKTCPAV` moves 748 places. The substitution falls on the peptide's C
 terminus, which anchors into the F pocket of HLA-A\*02:01, and that pocket prefers a
-hydrophobic residue. Glycine gives it nothing; valine gives it an anchor. The eight other
-windows place the substitution away from an anchor and move very little.
+hydrophobic residue. Glycine gives the pocket little; valine gives it a hydrophobic
+anchor. This is the model's behaviour rather than a measured structure, and the absolute
+affinity stays weak: predicted IC50 falls from 38,124 nM to 8,603 nM, both far above the
+500 nM usually treated as binding.
+
+Of the eight other windows, one also places the substitution at an anchor: 597-605 puts it
+at P2, and that window moves 918 to 752. The remaining seven place it at a non-anchor
+position and move very little.
 
 `GVMGENNTL` and `VVMGENNTL` are the only pair to reach the top fifty, and they rank
 together because the substitution sits at P1 in both.

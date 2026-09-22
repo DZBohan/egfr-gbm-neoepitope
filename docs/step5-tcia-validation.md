@@ -57,29 +57,34 @@ register presents the site best, not to propose nine separate epitopes. Precisio
 overlapping window set mostly measures how many windows were enumerated: adding 13-mers to
 the submission would have lowered it without changing anything biological.
 
-The result that carries weight is convergence on a single peptide. `VVMGENNTL` was the
-strongest binder among the nine windows in step 2, EL percentile 0.93, it was ranked top 50
-of 1,202 by processing score, and an independent pipeline on a different cohort listed it for
-four patients. That is worth testing. The other eight are not, and this comparison is a
+The result that carries weight is convergence on a single peptide. `VVMGENNTL` leads the
+nine mutant windows on processing total score, ranked 33 of 1,202 in step 2, it has the best
+EL percentile of the nine at 0.93, and a separately built pipeline on a different cohort
+listed it for four patients. That is worth testing. The other eight are not, and this comparison is a
 reasonable way to have reached that conclusion.
 
 Two cautions belong with it. First, `VVMGENNTL` puts the substitution at P1, an anchor
-position, which is why the pMHC immunogenicity model in step 4 scored it identically to the
-wild type. It binds well because of the substitution and it looks unchanged to a T cell
-receptor in the same breath, and only an experiment settles which matters. Second, the
-wild-type peptide `GVMGENNTL` also binds well, EL percentile 0.78, so the T cell repertoire
-has plausibly been tolerised against a very similar surface. ICERFIRE's high self-similarity
-penalty in step 4 was pointing at this.
+position, which is why the pMHC immunogenicity model in step 4 returned the same score for it
+and for the wild type. That equality follows from the model's mask, not from a measurement of
+what a T cell receptor can reach. Second, the substitution does not improve binding here. The
+wild-type `GVMGENNTL` has the better EL percentile of the two, 0.78 against 0.93, and the
+better predicted affinity, 1,509 nM against 1,808 nM. What the mutant leads on is the
+processing total score. So the candidate is a peptide whose presentation is no better than
+its wild-type counterpart and whose mutated residue points into the groove, and the
+repertoire has plausibly been tolerised against the near-identical wild-type surface.
 
 ## How common is this mutation in the TCGA cohort
 
-Five peptides in the export carry the G598V signature: `VVMGENNTL`, `AVVMGENNTL`,
-`VVMGENNTLV`, `VVMGENNTLVW` and `KTCPAVVM`. They come from seven patients, TCGA-06-0174,
+Six peptides in the export are compatible with the G598V sequence: `GPHCVKTCPAV`,
+`KTCPAVVM`, `AVVMGENNTL`, `VVMGENNTL`, `VVMGENNTLV` and `VVMGENNTLVW`. They come from seven
+patients, TCGA-06-0174,
 TCGA-12-0616, TCGA-12-0619, TCGA-19-2620, TCGA-28-1747, TCGA-28-5213 and TCGA-32-1982, out of
 the 35 patients in this EGFR table.
 
-So this substitution is recurrent in glioblastoma rather than private, which is what makes it
-worth a shared-epitope approach at all. It also matches step 3, where G598V was 6 of 17
+So this substitution recurs across patients rather than being private to one, which is what
+makes a shared-epitope approach worth considering at all. The export carries no variant
+coordinates or HLA assignments, so this is a count within a gene-filtered table, not a
+prevalence estimate for TCGA glioblastoma. It also matches step 3, where G598V was 6 of 17
 mutated samples in the CPTAC cohort.
 
 ## An in vivo approach to testing immunogenicity

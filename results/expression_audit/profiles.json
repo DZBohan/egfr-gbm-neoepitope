@@ -1,0 +1,193 @@
+[
+  {
+    "molecularProfileId": "gbm_cptac_2021_acetylprotein_quantification",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "GENERIC_ASSAY",
+    "genericAssayType": "Acetylproteome",
+    "datatype": "LIMIT-VALUE",
+    "name": "Acetylprotein abundance ratio",
+    "description": "Abundance ratio for acetylproteins measured by mass spectrometry.",
+    "showProfileInAnalysisTab": true,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_crna_quantification",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "GENERIC_ASSAY",
+    "genericAssayType": "cRNA",
+    "datatype": "LIMIT-VALUE",
+    "name": "cRNA expression (FPKM-UQ)",
+    "description": "Expression of circular RNA abundance in FPKM-UQ values",
+    "showProfileInAnalysisTab": true,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_gistic",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "COPY_NUMBER_ALTERATION",
+    "datatype": "DISCRETE",
+    "name": "Discrete copy number alteration values",
+    "description": "Discrete copy number alterations",
+    "showProfileInAnalysisTab": true,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_lipidome_negative_quantification",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "GENERIC_ASSAY",
+    "genericAssayType": "Lipidome",
+    "datatype": "LIMIT-VALUE",
+    "name": "Lipid abundance ratio (negative mode)",
+    "description": "Abundance log2 ratio for lipids measured by mass spectrometry (negative mode).",
+    "showProfileInAnalysisTab": true,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_lipidome_positive_quantification",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "GENERIC_ASSAY",
+    "genericAssayType": "Lipidome",
+    "datatype": "LIMIT-VALUE",
+    "name": "Lipid abundance ratio (positive mode)",
+    "description": "Abundance log2 ratio for lipids measured by mass spectrometry (positive mode).",
+    "showProfileInAnalysisTab": true,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_log2CNA",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "COPY_NUMBER_ALTERATION",
+    "datatype": "LOG2-VALUE",
+    "name": "Log2 copy-number values",
+    "description": "Log2 copy-number values.",
+    "showProfileInAnalysisTab": false,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_methylation_epic",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "METHYLATION",
+    "datatype": "CONTINUOUS",
+    "name": "Methylation (EPIC)",
+    "description": "Methylation beta-values (EPIC platform)",
+    "showProfileInAnalysisTab": false,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_mirna",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "MRNA_EXPRESSION",
+    "datatype": "CONTINUOUS",
+    "name": "miRNA expression (FPKM uq)",
+    "description": "Micro RNA expression by miRNA abundance in FPKM values",
+    "showProfileInAnalysisTab": false,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_mirna_median_Zscores",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "MRNA_EXPRESSION",
+    "datatype": "Z-SCORE",
+    "name": "Z-scores of miRNA expression (FPKM-UQ)",
+    "description": "Z-scores of miRNA abundance in FPKM-UQ values, calculated over all diploid samples.",
+    "showProfileInAnalysisTab": true,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_mrna",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "MRNA_EXPRESSION",
+    "datatype": "CONTINUOUS",
+    "name": "mRNA expression (FPKM UQ)",
+    "description": "Gene expression by mRNA abundance in upper-quartile (UQ)-normalized FPKM values, median-centered by gene.",
+    "showProfileInAnalysisTab": false,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_mrna_seq_fpkm_Zscores",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "MRNA_EXPRESSION",
+    "datatype": "Z-SCORE",
+    "name": "Z-scores of mRNA expression (FPKM-UQ, log2 transformed)",
+    "description": "Z-scores of mRNA abundance in FPKM-UQ values (log2 transformed), calculated over all diploid samples.",
+    "showProfileInAnalysisTab": true,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_mrna_seq_fpkm_all_sample_Zscores",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "MRNA_EXPRESSION",
+    "datatype": "Z-SCORE",
+    "name": "mRNA expression z-scores relative to all samples (FPKM capture, log2 transformed)",
+    "description": "Log-transformed mRNA z-scores compared to expression distribution of all samples (RNA Seq FPKM).",
+    "showProfileInAnalysisTab": true,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_mutations",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "MUTATION_EXTENDED",
+    "datatype": "MAF",
+    "name": "Mutations",
+    "description": "Somatic mutation data of whole genome or whole exome sequencing of 99 samples.",
+    "showProfileInAnalysisTab": true,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_phosphoproteome",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "GENERIC_ASSAY",
+    "genericAssayType": "Phosphoproteome",
+    "datatype": "LIMIT-VALUE",
+    "name": "Phosphoprotein abundance ratio",
+    "description": "Abundance ratio for phosphoproteins measured by mass spectrometry.",
+    "showProfileInAnalysisTab": true,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "PROTEIN_LEVEL",
+    "datatype": "LOG2-VALUE",
+    "name": "Protein abundance ratio",
+    "description": "Protein abundance ratio measured by mass spectrometry",
+    "showProfileInAnalysisTab": false,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_protein_quantification_zscores",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "PROTEIN_LEVEL",
+    "datatype": "Z-SCORE",
+    "name": "Protein abundance ratio Z-scores",
+    "description": "Z-scores of protein abundance ratio measured by mass spectrometry, calculated over all diploid samples.",
+    "showProfileInAnalysisTab": true,
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_single_cell_cycle_phases",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "GENERIC_ASSAY",
+    "genericAssayType": "SINGLE_CELL_CYCLE_PHASES",
+    "datatype": "LIMIT-VALUE",
+    "name": "Single cell - cell cycle phase values",
+    "description": "Cell growth phase assignments",
+    "showProfileInAnalysisTab": true,
+    "pivotThreshold": 0.001,
+    "sortOrder": "ASC",
+    "patientLevel": false
+  },
+  {
+    "molecularProfileId": "gbm_cptac_2021_single_cell_type_fractions",
+    "studyId": "gbm_cptac_2021",
+    "molecularAlterationType": "GENERIC_ASSAY",
+    "genericAssayType": "SINGLE_CELL_TYPE_FRACTIONS",
+    "datatype": "LIMIT-VALUE",
+    "name": "Single cell - cell type assignment fractions",
+    "description": "Cell type assignments",
+    "showProfileInAnalysisTab": true,
+    "pivotThreshold": 0.001,
+    "sortOrder": "ASC",
+    "patientLevel": false
+  }
+]
