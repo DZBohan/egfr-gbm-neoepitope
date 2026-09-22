@@ -80,6 +80,7 @@ separate peptides.
 **The expression term is at its default.** `total_gene_tpm` is 6.071 in every row, the value
 used when none is supplied. ICERFIRE weights expression, and step 3 showed EGFR in this
 cohort is amplified and highly expressed, so the real value for these tumours is far above
-the default. The ICERFIRE scores here are therefore conservative, and supplying a
-cohort-appropriate TPM would raise them. That is the one input worth revisiting before
-treating these percentiles as final.
+the default. The ICERFIRE scores here are therefore conservative, and a cohort-appropriate
+TPM would raise them. The web server offers no field for it, so this cannot be corrected
+from the interface used here, and the percentiles above should be read as a floor rather
+than an estimate.
