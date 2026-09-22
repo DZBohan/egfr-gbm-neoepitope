@@ -5,6 +5,10 @@ spectrometry rather than RPPA, and the question at the end of this step is about
 spectrometry. Numbers below are from `./scripts/01_expression.py --gene EGFR --entrez 1956
 --study gbm_cptac_2021 --change G598V`.
 
+99 samples with both protein and mRNA, 96 with copy number, 17 mutated. The mutation
+spectrum is G598V x6, R222C x2, A289D x2, and one each of G665D, H304Y, V774M, P772_H773dup,
+D770_V774dup.
+
 ## The Plots tab
 
 Protein vs mRNA, coloured by mutation type, with G598V entered under Search Mutation(s) so
@@ -19,10 +23,6 @@ protein 0.7 to 3.1. In the second plot five of the six carry a red amplified rin
 sixth has no copy-number call, which is why the script counts 15 of 15 rather than 17 of 17.
 The upper right also holds a crowd of small red-ringed points: samples amplified without any
 mutation, at the same protein levels. That crowd is the confounder, visible directly.
-
-99 samples with both protein and mRNA, 96 with copy number, 17 mutated. The mutation
-spectrum is G598V x6, R222C x2, A289D x2, and one each of G665D, H304Y, V774M, P772_H773dup,
-D770_V774dup.
 
 ## Mutated samples look far higher, at both levels
 
