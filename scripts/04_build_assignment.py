@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build the assignment from archived result tables; no network or third-party packages."""
-import csv, json, math, statistics as st
+import base64, csv, json, math, statistics as st
 from pathlib import Path
 from html import escape as e
 
@@ -11,7 +11,9 @@ def num(r,k): return float(r[k])
 def f(v,n=3): return f'{float(v):.{n}f}'
 def table(caption,headers,rows):
     return '<div class="table-wrap"><table><caption>'+caption+'</caption><thead><tr>'+''.join('<th scope="col">'+e(str(x))+'</th>' for x in headers)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+e(str(x))+'</td>' for x in r)+'</tr>' for r in rows)+'</tbody></table></div>\n'
-def fig(name,caption): return f'<figure><img src="../figures/{name}" alt="{e(caption)}"><figcaption>{caption}</figcaption></figure>\n'
+def fig(name,caption):
+    image_data = base64.b64encode((ROOT/'figures'/name).read_bytes()).decode('ascii')
+    return f'<figure><img src="data:image/jpeg;base64,{image_data}" alt="{e(caption)}"><figcaption>{caption}</figcaption></figure>\n'
 def source(path): return f'<p class="source">Data: <a href="../{path}">{path}</a>.</p>'
 def cite(url,label): return f'<a href="{url}">{label}</a>'
 def fasta(path):
@@ -50,7 +52,38 @@ html=['''<!doctype html>
 <title>EGFR G598V in Glioblastoma: A Proteogenomics Assignment</title>
 <style>
 :root{color-scheme:light;--ink:#192d3c;--accent:#24566b;--line:#ccd8df}
-*{box-sizing:border-box}body{margin:0;background:#edf2f4;color:var(--ink);font:16px/1.65 Georgia,"Times New Roman",serif}main{max-width:1160px;margin:32px auto;background:#fff;padding:48px 54px;box-shadow:0 3px 22px #182d3c12}h1,h2,h3,nav,th,caption,.eyebrow{font-family:Arial,Helvetica,sans-serif}h1{font-size:2.25rem;line-height:1.2;margin:8px 0 20px}h2{font-size:1.55rem;border-top:3px solid var(--accent);padding-top:20px;margin-top:50px}h3{font-size:1.1rem;margin-top:28px}.eyebrow{color:var(--accent);letter-spacing:.12em;font-size:.8rem;text-transform:uppercase}a{color:#165c7a}nav{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}nav a{background:#edf4f7;padding:7px 12px;text-decoration:none}p{margin:12px 0}.summary{border-left:4px solid var(--accent);background:#eff6f8;padding:14px 20px;margin:20px 0}.limitation{border-left:4px solid #997343;background:#faf5ed;padding:14px 20px}.table-wrap{overflow-x:auto;margin:20px 0}table{border-collapse:collapse;width:100%;font:13px/1.45 Arial,Helvetica,sans-serif;font-variant-numeric:tabular-nums}caption{text-align:left;font-weight:bold;font-size:14px;margin-bottom:10px}th,td{padding:8px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#eaf1f5}tbody tr:nth-child(even){background:#f7f9fa}td{white-space:nowrap}pre,code{font-family:"DejaVu Sans Mono",Consolas,monospace}code{font-size:.9em}pre{background:#f4f6f8;padding:18px;overflow-x:auto;font-size:14px;line-height:1.65}.variant{color:#c51627;font-weight:bold;text-decoration:underline}figure{margin:28px 0}img{display:block;max-width:100%;height:auto;margin:auto;max-height:850px}figcaption,.source{font-size:.88rem;color:#435866}figcaption{margin-top:12px}.source{overflow-wrap:anywhere}li{margin:9px 0}footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:#435866;font-size:.85rem}@media(max-width:700px){main{margin:0;padding:22px 18px}h1{font-size:1.8rem}pre{font-size:11px}table{font-size:12px}}@media print{body{background:white;font-size:10pt}main{max-width:none;margin:0;padding:0;box-shadow:none}h2,h3{break-after:avoid}tr,figure,.summary{break-inside:avoid}thead{display:table-header-group}img{max-height:170mm}a{color:inherit;text-decoration:none}.table-wrap{overflow:visible}th,td{padding:5px;font-size:8pt}pre{font-size:9pt}nav{display:none}}
+*{box-sizing:border-box}body{margin:0;background:#edf2f4;color:var(--ink);font:16px/1.65 Georgia,"Times New Roman",serif}main{max-width:1160px;margin:32px auto;background:#fff;padding:48px 54px;box-shadow:0 3px 22px #182d3c12}h1,h2,h3,nav,th,caption,.eyebrow{font-family:Arial,Helvetica,sans-serif}h1{font-size:2.25rem;line-height:1.2;margin:8px 0 20px}h2{font-size:1.55rem;border-top:3px solid var(--accent);padding-top:20px;margin-top:50px}h3{font-size:1.1rem;margin-top:28px}.eyebrow{color:var(--accent);letter-spacing:.12em;font-size:.8rem;text-transform:uppercase}a{color:#165c7a}nav{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}nav a{background:#edf4f7;padding:7px 12px;text-decoration:none}p{margin:12px 0}.summary{border-left:4px solid var(--accent);background:#eff6f8;padding:14px 20px;margin:20px 0}.limitation{border-left:4px solid #997343;background:#faf5ed;padding:14px 20px}.table-wrap{overflow-x:auto;margin:20px 0}table{border-collapse:collapse;width:100%;font:13px/1.45 Arial,Helvetica,sans-serif;font-variant-numeric:tabular-nums}caption{text-align:left;font-weight:bold;font-size:14px;margin-bottom:10px}th,td{padding:8px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#eaf1f5}tbody tr:nth-child(even){background:#f7f9fa}td{white-space:nowrap}pre,code{font-family:"DejaVu Sans Mono",Consolas,monospace}code{font-size:.9em}pre{background:#f4f6f8;padding:18px;overflow-x:auto;font-size:14px;line-height:1.65}.variant{color:#c51627;font-weight:bold;text-decoration:underline}figure{margin:28px 0}img{display:block;max-width:100%;height:auto;margin:auto;max-height:850px}figcaption,.source{font-size:.88rem;color:#435866}figcaption{margin-top:12px}.source{overflow-wrap:anywhere}li{margin:9px 0}footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:#435866;font-size:.85rem}@media(max-width:700px){main{margin:0;padding:22px 18px}h1{font-size:1.8rem}pre{font-size:11px}table{font-size:12px}}@page {
+ size: A4;
+ margin: 17mm 15mm 19mm;
+ @bottom-center { content: "Page " counter(page) " of " counter(pages); font: 9pt Arial, sans-serif; color: #435866; }
+}
+@media print {
+ body { background: white; font-size: 10pt; line-height: 1.45; }
+ main { max-width: none; margin: 0; padding: 0; box-shadow: none; }
+ h1 { font-size: 23pt; }
+ h2 { font-size: 15pt; margin-top: 20pt; padding-top: 10pt; break-after: avoid; }
+ h3 { font-size: 11pt; margin-top: 14pt; break-after: avoid; }
+ p { margin: 7pt 0; orphans: 3; widows: 3; }
+ table, figure, tr, .summary, .limitation, pre { break-inside: avoid; }
+ .table-wrap { overflow: visible; margin: 12pt 0; break-inside: avoid; }
+ table { width: 100%; font-size: 8pt; line-height: 1.3; }
+ thead { display: table-header-group; }
+ th, td { padding: 4pt 3pt; font-size: inherit; }
+ th { white-space: normal; }
+ td { white-space: normal; overflow-wrap: anywhere; }
+ caption { font-size: 9pt; margin-bottom: 6pt; break-after: avoid; }
+ figure { margin: 8pt 0; }
+ img { max-width: 100%; max-height: 105mm; width: auto; height: auto; }
+ figcaption { margin-top: 6pt; font-size: 8.5pt; line-height: 1.35; }
+ a { color: inherit; text-decoration: none; }
+ pre { font-size: 8.2pt; line-height: 1.35; padding: 10pt; white-space: pre; overflow: visible; }
+ .variant { color: #c51627 !important; print-color-adjust: exact; }
+ .summary, .limitation { padding: 9pt 12pt; margin: 12pt 0; }
+ .source { font-size: 8pt; }
+ footer { font-size: 8pt; }
+ nav { display: none; }
+}
+
 </style></head><body><main>
 <header><p class="eyebrow">Proteogenomics course assignment</p><h1>EGFR G598V in Glioblastoma</h1><p>From protein sequence and antigen processing to expression, immunogenicity, and the limits of database validation.</p></header>
 <nav aria-label="Assignment steps"><a href="#step1">1. Sequences</a><a href="#step2">2. Processing</a><a href="#step3">3. Expression</a><a href="#step4">4. Immunogenicity</a><a href="#step5">5. Validation</a></nav>
@@ -156,7 +189,7 @@ html.append(f'''<p>The original HHD system uses an HLA-A2.1/H-2D<sup>b</sup> mon
 <h3>Glioblastoma literature and translational limits</h3>
 <p>The phase 3 ACT IV trial of EGFRvIII-targeted rindopepimut did not improve survival. This supports caution about extrapolating antigen-specific responses to clinical benefit; it does not prove that every single-antigen vaccine must fail or that antigen loss alone caused the result ({cite('https://doi.org/10.1016/S1470-2045(17)30517-X','Weller et al., 2017')}).</p>
 <p>Recent GBM studies support investigating multiple personalized targets: a phase 1 DNA vaccine study included up to 40 neoantigens and reported vaccine-associated T-cell responses ({cite('https://www.nature.com/articles/s43018-026-01163-w','Garfinkle et al., 2026')}). A single-arm phase Ib neoantigen-pulsed dendritic-cell trial treated 11 patients and reported median PFS of 16.2 months from surgery ({cite('https://www.nature.com/articles/s41467-026-75066-w','Zhang et al., 2026')}). These early studies do not establish randomized survival benefit or validate G598V. A confirmed G598V epitope might be considered in a broader antigen strategy, subject to HLA matching, tumor heterogeneity, natural presentation, and mutant-specific recognition.</p></section>
-<footer>Data provenance: supplied FASTA files, archived IEDB and TCIA result tables, retained screenshots, and an additional cBioPortal API snapshot in <code>results/expression_audit/</code>. Tables are generated directly from these files by <code>scripts/04_build_assignment.py</code>. Local image references are relative to this document. No VEP screenshot or new experimental observation is implied.</footer></main></body></html>''')
+<footer>Data provenance: supplied FASTA files, archived IEDB and TCIA result tables, retained screenshots, and an additional cBioPortal API snapshot in <code>results/expression_audit/</code>. Tables are generated directly from these files by <code>scripts/04_build_assignment.py</code>. Screenshots are embedded in this document; their source files are in figures/. No VEP screenshot or new experimental observation is implied.</footer></main></body></html>''')
 out='\n'.join(html)
 assert '\u2014' not in out
 (ROOT/'docs/assignment.html').write_text(out)
