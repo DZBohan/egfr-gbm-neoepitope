@@ -11,6 +11,8 @@ output in `results/` by [scripts/04_build_assignment.py](scripts/04_build_assign
 
 ---
 
+**Bohan Zhang**
+
 From protein sequence and antigen processing to expression, immunogenicity, and the limits of
 database validation.
 
