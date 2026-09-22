@@ -7,7 +7,6 @@
 - Step 3, expression integration. `docs/step3-expression.md`, plots in `figures/`.
 - Step 4, structural immunogenicity, both models. `docs/step4-immunogenicity.md`, table in
   `results/iedb_variant_comparison/`, plots in `figures/`.
-
 - Step 5, benchmark validation against TCIA. `docs/step5-tcia-validation.md`, export in
   `results/tcia_gbm_egfr/`.
 

@@ -34,6 +34,14 @@ equal scores for the three windows that put the substitution on a masked anchor 
 ICERFIRE scores the same pairs differently, and the file works through the five reasons the
 two models disagree.
 
+`docs/step5-tcia-validation.md`, benchmark comparison. One of the nine peptides,
+`VVMGENNTL`, is listed for four glioblastoma patients in The Cancer Immunome Atlas, giving a
+precision of 1/9 on exact sequence identity, or 3/9 if a longer listed peptide containing
+ours counts, which are answers to two different questions and both reported. The file also
+sets out why a precision over nine overlapping windows on one substitution measures the
+enumeration more than the biology, and why that atlas is a comparison against other
+predictions rather than the mass spectrometry validation the exercise describes.
+
 ## Scripts
 
 `scripts/01_expression.py` pulls mRNA, protein, copy number and mutations for one gene from
