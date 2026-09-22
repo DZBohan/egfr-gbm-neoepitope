@@ -52,10 +52,40 @@ terminus does not change what the F pocket sees, so the 9-mer result reappears a
 The other twelve windows move very little, and `GVMGENNTLVWKY` again ranks near the top for
 both sequences because the substitution sits at P1.
 
-## Reading these against the 9-mers
+## Where the 9-mer and 13-mer scores differ, and why
 
-Rank positions are comparable between the two runs, absolute scores are not: a 13-mer is
-scored against other 13-mers, and NetMHCpan handles 13-mers less well than 9-mers, which is
-also the biological expectation. Most presented peptides on HLA-A\*02:01 are 9 to 10
-residues long. The point of the 13-mer run is that the C-terminal anchor effect is not an
-artefact of one peptide length.
+Wild-type sequence, all 1,202 nine-mers against all 1,198 thirteen-mers.
+
+| column | 9-mer mean | 13-mer mean | 9-mer best | 13-mer best |
+|---|---|---|---|---|
+| proteasome | 1.017 | 1.016 | 1.837 | 1.837 |
+| tap | -0.106 | -0.106 | 1.399 | 1.455 |
+| mhc | -4.365 | -4.403 | -0.601 | -1.150 |
+| processing total | -3.454 | -3.494 | 0.986 | 0.757 |
+
+Peptides binding under 500 nM: 31 of 1,202 at nine residues, 11 of 1,198 at thirteen.
+
+**Proteasome and TAP do not care about length.** Both columns are unchanged to three decimal
+places. The proteasome score models cleavage at the C terminus, and the TAP score is
+dominated by the three N-terminal residues plus the C-terminal one, because that is what the
+transporter contacts. Neither quantity asks how many residues sit in between, so lengthening
+the window shifts which peptides carry a given pair of ends but not the distribution of
+scores. The identical maximum proteasome score in both runs is the same C-terminal cleavage
+site being found at both lengths.
+
+**The MHC column is where length is paid for.** The means differ by only 0.04, but the tail
+does not: the best 9-mer binds at -0.601 and the best 13-mer at -1.150, and the count of
+sub-500 nM binders falls from 31 to 11. The HLA-A\*02:01 groove is closed at both ends and
+spans roughly nine residues between the B pocket, which takes P2, and the F pocket, which
+takes the C terminus. A 9-mer lies flat with both anchors seated. A 13-mer can seat the same
+two anchors only by bulging four residues out of the groove, which costs binding energy.
+
+**So the difference in processing total score is almost entirely the MHC term.** Total is the
+sum of the three, and the two length-independent terms contribute equally at both lengths.
+This matches what is observed experimentally: eluted HLA-A\*02:01 ligands are overwhelmingly
+9 and 10 residues long, with 13-mers rare.
+
+One consequence for reading this pair of runs: rank positions are comparable between the two
+lengths, absolute scores are not, since each peptide is ranked only against others of its own
+length. The point of the 13-mer run is not that it finds better peptides, it is that the
+C-terminal anchor effect at residue 598 is not an artefact of one peptide length.
