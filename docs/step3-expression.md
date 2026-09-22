@@ -19,8 +19,11 @@ D770_V774dup.
 | G598V (n=6) | +2.101 | 7,980,513 |
 | rest (n=93) | +0.137 | 733,154 |
 
-Protein and mRNA agree across the cohort, Pearson r = 0.817, so this is not a measurement
-artefact at one level.
+Protein and mRNA agree across the cohort, so this is not a measurement artefact at one
+level. The script reports Pearson r = 0.817 on the raw linear mRNA values; the Plots tab
+reports r = 0.92 and Spearman 0.93 on the same samples because its x axis is the z-score of
+log2 FPKM-UQ. The log transform pulls in the few extremely amplified samples that otherwise
+dominate a linear correlation. Same data, same conclusion, different scale.
 
 ## Stratifying by copy number shows it is amplification, not mutation
 
