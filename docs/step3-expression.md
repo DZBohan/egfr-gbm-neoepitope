@@ -3,8 +3,22 @@
 `gbm_cptac_2021`, EGFR, entrez 1956. That cohort is chosen because its protein data is mass
 spectrometry rather than RPPA, and the question at the end of this step is about mass
 spectrometry. Numbers below are from `./scripts/01_expression.py --gene EGFR --entrez 1956
---study gbm_cptac_2021 --change G598V`. The screenshot of the Plots tab, Protein vs mRNA
-coloured by amino-acid change, sits alongside this file.
+--study gbm_cptac_2021 --change G598V`.
+
+## The Plots tab
+
+Protein vs mRNA, coloured by mutation type, with G598V entered under Search Mutation(s) so
+that its six samples are drawn enlarged: `figures/step3_protein_vs_mrna_g598v.jpg`.
+
+The same plot with Copy Number also ticked, where the ring colour gives copy-number state,
+red amplified, pink gain, grey diploid, black not profiled:
+`figures/step3_protein_vs_mrna_g598v_cna.jpg`.
+
+Every enlarged G598V sample sits in the upper right of both plots, mRNA z-score 2 to 3.5 and
+protein 0.7 to 3.1. In the second plot five of the six carry a red amplified ring and the
+sixth has no copy-number call, which is why the script counts 15 of 15 rather than 17 of 17.
+The upper right also holds a crowd of small red-ringed points: samples amplified without any
+mutation, at the same protein levels. That crowd is the confounder, visible directly.
 
 99 samples with both protein and mRNA, 96 with copy number, 17 mutated. The mutation
 spectrum is G598V x6, R222C x2, A289D x2, and one each of G665D, H304Y, V774M, P772_H773dup,
