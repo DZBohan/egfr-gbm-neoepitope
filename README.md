@@ -1,6 +1,6 @@
 # EGFR G598V in Glioblastoma
 
-A proteogenomics course exercise on EGFR G598V in glioblastoma, worked end to end: protein
+An immunology course exercise on EGFR G598V in glioblastoma, worked end to end: protein
 sequence, antigen processing and presentation, expression integration, structural
 immunogenicity, and what a public neo-antigen atlas can and cannot validate.
 
