@@ -8,6 +8,32 @@ The scripts are gene- and study-agnostic. EGFR in `gbm_cptac_2021` is the defaul
 that cohort's protein data is mass spectrometry rather than RPPA, and the exercise's final
 question concerns mass spectrometry.
 
+## What the analysis found
+
+Write-ups are in `docs/`, one per part of the exercise, each naming the tool settings it
+used and the file its numbers come from.
+
+`docs/step2-9mer.md` and `docs/step2-13mer.md`, antigen processing and presentation. At both
+peptide lengths the ten best-presented peptides are identical between wild type and G598V,
+because none of them comes near residue 598. Of the windows that do span it, one moves
+sharply at each length, and it is the one that places the substitution on the C terminus:
+glycine gives the F pocket of HLA-A\*02:01 no anchor, valine does. The two runs also differ
+from each other in a way the score columns explain: proteasome and TAP scores do not depend
+on peptide length, while MHC binding does, because the groove holds nine to ten residues and
+a 13-mer must bulge.
+
+`docs/step3-expression.md`, expression integration. EGFR mRNA and protein are far higher in
+mutated samples, and that contrast is confounded: every mutated sample with copy-number data
+is also amplified, and amplified samples without a mutation sit at the same protein level.
+The difference tracks copy number, not mutation status. The same file sets out why an
+abundant mutant protein is still hard to confirm by mass spectrometry.
+
+`docs/step4-immunogenicity.md`, structural immunogenicity. The pMHC immunogenicity model
+reports no meaningful difference between wild-type and mutant peptides, and returns exactly
+equal scores for the three windows that put the substitution on a masked anchor position.
+ICERFIRE scores the same pairs differently, and the file works through the five reasons the
+two models disagree.
+
 ## Scripts
 
 `scripts/01_expression.py` pulls mRNA, protein, copy number and mutations for one gene from
