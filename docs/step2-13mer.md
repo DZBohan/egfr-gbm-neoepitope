@@ -47,7 +47,9 @@ Ranks are out of 1,198.
 The same window wins, for the same reason. `IDGPHCVKTCPAG` to `IDGPHCVKTCPAV` moves 610
 places, the only window that moves more than a few hundred, and it is the one window that
 puts the substitution on the C terminus. Extending the peptide four residues at the N
-terminus does not change what the F pocket sees, so the 9-mer result reappears at 13.
+terminus leaves the C-terminal chemistry alone, so the 9-mer result reappears at 13. The
+proteasome and TAP contributions are identical to the 9-mer case, 0.201 and 0.741, since
+both depend on the termini; the MHC contribution is smaller here, 0.215 against 0.647.
 
 The other twelve windows move very little, and `GVMGENNTLVWKY` again ranks near the top for
 both sequences because the substitution sits at P1.

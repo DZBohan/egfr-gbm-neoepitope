@@ -44,9 +44,12 @@ Ranks are out of 1,202.
 `HCVKTCPAG` to `HCVKTCPAV` moves 748 places. The substitution falls on the peptide's C
 terminus, which anchors into the F pocket of HLA-A\*02:01, and that pocket prefers a
 hydrophobic residue. Glycine gives the pocket little; valine gives it a hydrophobic
-anchor. This is the model's behaviour rather than a measured structure, and the absolute
-affinity stays weak: predicted IC50 falls from 38,124 nM to 8,603 nM, both far above the
-500 nM usually treated as binding.
+anchor. That is the usual reading, but the score columns do not put the whole gain there.
+Decomposing the 1.588: TAP contributes 0.741, MHC binding 0.647 and the proteasome term
+0.201. Changing the C-terminal residue changes what the TAP model sees as much as what the
+groove sees, so this is a three-part change and not a pure binding effect. The absolute
+affinity also stays weak, with predicted IC50 falling from 38,124 nM to 8,603 nM, both far
+above the 500 nM usually treated as binding.
 
 Of the eight other windows, one also places the substitution at an anchor: 597-605 puts it
 at P2, and that window moves 918 to 752. The remaining seven place it at a non-anchor
