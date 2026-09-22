@@ -8,26 +8,19 @@
 - Step 4, structural immunogenicity, both models. `docs/step4-immunogenicity.md`, table in
   `results/iedb_variant_comparison/`, plots in `figures/`.
 
-## Next: step 5, LC-MS/MS benchmark validation
+- Step 5, benchmark validation against TCIA. `docs/step5-tcia-validation.md`, export in
+  `results/tcia_gbm_egfr/`.
 
-The Cancer Immunome Atlas, glioblastoma, Neoantigens table, parent gene EGFR. From that
-list:
-
-1. Count how many of the step 4 peptides appear in observed pull-down data, true positives,
-   and how many do not, false positives.
-2. Compute precision, TP / (TP + FP), for the step 4 list.
-3. Say whether that precision justifies testing these peptides experimentally.
-4. Describe an in vivo approach to testing immunogenicity in glioblastoma, from current
-   literature.
-
-The step 4 candidate list to check against, best ICERFIRE percentile first: `TCPAVVMGE`
-15.9, `AVVMGENNT` 26.1, `CPAVVMGEN` 29.1, `PAVVMGENN` 40.0, `VVMGENNTL` 42.3, `CVKTCPAVV`
-50.8, `VKTCPAVVM` and `KTCPAVVMG` 52.5, `HCVKTCPAV` 56.0.
+All five parts of the exercise are written up. What follows is optional.
 
 ## Open points
 
 - ICERFIRE ran with its default `total_gene_tpm` of 6.071. EGFR is amplified and highly
   expressed in this cohort, so those percentiles are a floor. The web server has no field
   for expression, so correcting it needs the API or a local install.
-- Nothing from step 4 reaches a percentile usually treated as promising. Step 5 is where
-  that gets checked against observed data rather than argued from the scores.
+- Step 5 compared our predictions against TCIA's predictions, not against observed spectra.
+  The exercise calls the TCIA table mass spectrometry pull-down data and it is not. A real
+  validation would need an immunopeptidomics dataset from HLA-A2-positive glioblastoma.
+- `VVMGENNTL` is the one peptide both pipelines agree on, and it is also the one whose
+  substitution sits at P1. Whether that is a presentable neo-epitope or a self-like surface
+  is the open biological question, and it is an experiment, not a calculation.
